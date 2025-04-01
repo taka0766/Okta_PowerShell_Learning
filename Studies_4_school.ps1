@@ -10,7 +10,7 @@
 .PARAMETER OktaApiKey
     Okta APIキーを指定します。
 .EXAMPLE
-    .\Create-OktaStudentAccounts.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
+    .\Studies_4_school.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
 .OUTPUTS
     なし
 #>
