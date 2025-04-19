@@ -36,7 +36,7 @@ foreach ($Student in $Students) {
     }
 
     # Okta APIを呼び出してユーザーを作成
-    $UserJson = $User | ConvertTo-Json
+    $UserJson = $User | ConvertTo-Json -Depth 10
     $OktaApiUri = "$OktaApiUrl/users"
     $OktaApiResponse = Invoke-RestMethod -Uri $OktaApiUri -Method Post -Headers @{Authorization = "SSWS $OktaApiKey"} -Body $UserJson -ContentType "application/json"
 
