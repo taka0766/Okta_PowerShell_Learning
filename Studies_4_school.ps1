@@ -6,7 +6,7 @@
 # - OktaApiKey：Okta APIキー（SSWS トークン）
 #
 # 使用例：
-# .\Studies_4_school.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
+# .\Studies_4_school.ps1 -StudentDataPath ".\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
 
 param (
     [string]$StudentDataPath = ".\StudentData.csv",

@@ -12,7 +12,7 @@
 # .PARAMETER OktaApiKey
 #     Okta APIキーを指定します。
 # .EXAMPLE
-#     .\Studies_4_Gov.ps1 -EmployeeDataPath "C:\EmployeeData.csv" `
+#     .\Studies_4_Gov.ps1 -EmployeeDataPath ".\EmployeeData.csv" `
 #         -OktaApiUrl "https://your-okta-domain.com/api/v1" `
 #         -OktaApiKey "your-okta-api-key"
 # .OUTPUTS
