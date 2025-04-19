@@ -1,19 +1,13 @@
-<#
-.SYNOPSIS
-    CSVファイルから学籍情報を読み込み、Oktaユーザーアカウントを作成します。
-.DESCRIPTION
-    このスクリプトは、指定されたCSVファイルから学籍情報を読み込み、Okta APIを使用して、各学生のOktaユーザーアカウントを作成します。
-.PARAMETER StudentDataPath
-    学籍情報が記載されたCSVファイルのパスを指定します。
-.PARAMETER OktaApiUrl
-    Okta APIのURLを指定します。
-.PARAMETER OktaApiKey
-    Okta APIキーを指定します。
-.EXAMPLE
-    .\Studies_4_school.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
-.OUTPUTS
-    なし
-#>
+# CSVファイルから学籍情報を読み込み、Oktaユーザーアカウントを作成します。
+# 
+# スクリプトの引数：
+# - StudentDataPath：学籍情報CSVファイルのパス
+# - OktaApiUrl：Okta API のベースURL（例: https://your-org.okta.com/api/v1）
+# - OktaApiKey：Okta APIキー（SSWS トークン）
+#
+# 使用例：
+# .\Studies_4_school.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
+
 param (
     [string]$StudentDataPath = "C:\StudentData.csv",
     [string]$OktaApiUrl = "https://your-okta-domain.com/api/v1",
