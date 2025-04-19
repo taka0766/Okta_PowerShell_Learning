@@ -9,7 +9,7 @@
 # .\Studies_4_school.ps1 -StudentDataPath "C:\StudentData.csv" -OktaApiUrl "https://your-okta-domain.com/api/v1" -OktaApiKey "your-okta-api-key"
 
 param (
-    [string]$StudentDataPath = "C:\StudentData.csv",
+    [string]$StudentDataPath = ".\StudentData.csv",
     [string]$OktaApiUrl = "https://your-okta-domain.com/api/v1",
     [string]$OktaApiKey = "your-okta-api-key"
 )
