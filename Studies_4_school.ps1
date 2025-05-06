@@ -37,7 +37,7 @@ function Write-Log {
         $logFileTimestamp = Get-Date -Format "yyyy-MM-dd_HH-mm-ss"
         
         # 実行時のタイムスタンプをファイル名に付ける
-        $logFile = "Okta_User_Creation_Log_$logFileTimestamp.txt"  # ログファイル名を実行時に決定
+        $logFile = "Okta_User_4_school_Creation_Log_$logFileTimestamp.txt"  # ログファイル名を実行時に決定
 
         # ファイルがまだ作成されていない場合、ファイルを一度だけ開く
         if (-not $global:logFileStream) {
